@@ -1,0 +1,8 @@
+s = input("Введите предложение на английском: ")
+print(f"Длина: {len(s)}")
+print(f"В нижнем регистре: {s.lower()}")
+vowels = sum(1 for c in s.lower() if c in 'aeiou')
+print(f"Гласных: {vowels}")
+s_new = s.replace("ugly", "beauty")
+print(f"После замены: {s_new}")
+print(f"Начинается с 'The'? {s.startswith('The')}, заканчивается на 'end'? {s.endswith('end')}")
